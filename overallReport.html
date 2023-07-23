@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overall Result</title>
+  <link rel="stylesheet" href="../index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</head>
+<style>
+  body {
+    overflow-x: hidden;
+  }
+</style>
+
+<body>
+
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GeekCoders</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!--Search bar-->
+      <input type="text" id="search-navbar"
+        class="mainLoginInput block w-2/5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="&#61442; Quick Find">
+      
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="../home.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          </li>
+          <li>
+            <a href="../about.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="https://formsubmit.co/el/cageyi"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+          <li>
+
+            <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button">Profile <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownInformation"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                <div>Admin</div>
+                <div class="font-medium truncate"></div>
+              </div>
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+                <li>
+                  <a href="../overallReport.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">OverallResult</a>
+                </li>
+
+              </ul>
+              <div class="py-2">
+                <a href="../index.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                  out</a>
+              </div>
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr class="hr-tag">
+
+  <div class="overresult-title">
+    <h2>Section Wise Progress</h2>
+  </div>
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Array</div>
+      <div class="loading">
+        <div class="percent_array">100%</div>
+        <div class="text_array">Completed!</div>
+        <div class="progress-bar_array">
+          <div class="progress_array"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">String</div>
+      <div class="loading">
+        <div class="percent_string">100%</div>
+        <div class="text_string">Completed!</div>
+        <div class="progress-bar_string">
+          <div class="progress_string"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Linked List</div>
+      <div class="loading">
+        <div class="percent_linked">100%</div>
+        <div class="text_linked">Completed!</div>
+        <div class="progress-bar_linked">
+          <div class="progress_linked"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Binary Search</div>
+      <div class="loading">
+        <div class="percent_binary">100%</div>
+        <div class="text_binary">Completed!</div>
+        <div class="progress-bar_binary">
+          <div class="progress_binary"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Sorting Algorithms</div>
+      <div class="loading">
+        <div class="percent_sorting">100%</div>
+        <div class="text_sorting">Completed!</div>
+        <div class="progress-bar_sorting">
+          <div class="progress_sorting"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Stack</div>
+      <div class="loading">
+        <div class="percent_stack">100%</div>
+        <div class="text_stack">Completed!</div>
+        <div class="progress-bar_stack">
+          <div class="progress_stack"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Queue</div>
+      <div class="loading">
+        <div class="percent_queue">100%</div>
+        <div class="text_queue">Completed!</div>
+        <div class="progress-bar_queue">
+          <div class="progress_queue"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Trees</div>
+      <div class="loading">
+        <div class="percent_trees">100%</div>
+        <div class="text_trees">Completed!</div>
+        <div class="progress-bar_trees">
+          <div class="progress_trees"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Graphs</div>
+      <div class="loading">
+        <div class="percent_graphs">100%</div>
+        <div class="text_graphs">Completed!</div>
+        <div class="progress-bar_graphs">
+          <div class="progress_graphs"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Recursion</div>
+      <div class="loading">
+        <div class="percent_recursion">100%</div>
+        <div class="text_recursion">Completed!</div>
+        <div class="progress-bar_recursion">
+          <div class="progress_recursion"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Dynamic Programming</div>
+      <div class="loading">
+        <div class="percent_dp">100%</div>
+        <div class="text_dp">Completed!</div>
+        <div class="progress-bar_dp">
+          <div class="progress_dp"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Amazon</div>
+      <div class="loading">
+        <div class="percent_amazon">100%</div>
+        <div class="text_amazon">Completed!</div>
+        <div class="progress-bar_amazon">
+          <div class="progress_amazon"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Facebook</div>
+      <div class="loading">
+        <div class="percent_facebook">100%</div>
+        <div class="text_facebook">Completed!</div>
+        <div class="progress-bar_facebook">
+          <div class="progress_facebook"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Netflix</div>
+      <div class="loading">
+        <div class="percent_netflix">100%</div>
+        <div class="text_netflix">Completed!</div>
+        <div class="progress-bar_netflix">
+          <div class="progress_netflix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="div1-swp">
+
+    <div class="inner-div1-swp">
+      <div class="txt">Google</div>
+      <div class="loading">
+        <div class="percent_google">100%</div>
+        <div class="text_google">Completed!</div>
+        <div class="progress-bar_google">
+          <div class="progress_google"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-div2-swp">
+      <div class="txt">Meta</div>
+      <div class="loading">
+        <div class="percent_facebook">100%</div>
+        <div class="text_facebook">Completed!</div>
+        <div class="progress-bar_facebook">
+          <div class="progress_facebook"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+</body>
+<script>
+
+  let c = 0;
+  var amazon_count;
+  var array_count;
+  var binary_count;
+  var dp_count;
+  var google_count;
+  var graph_count;
+  var linked_count;
+  var meta_count;
+  var netflix_count;
+  var que_count;
+  var recur_count;
+  var sort_count;
+  var stack_count;
+  var string_count;
+  var tree_count;
+  
+   
+    //string
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'stngcb1state' || key == 'stngcb2state' || key == 'stngcb3state' || key == 'stngcb4state' || key == 'stngcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    string_count = c;
+    string(c);
+
+    function string(c) {
+      val = c;
+      var percent = document.querySelector('.percent_string');
+      var progress = document.querySelector('.progress_string');
+      var text = document.querySelector('.text_string');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+
+
+
+    }
+    //linked list
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'llcb1state' || key == 'llcb2state' || key == 'llcb3state' || key == 'llcb4state' || key == 'llcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    linked_count = c;
+    list(c);
+
+    function list(c) {
+      val = c;
+      var percent = document.querySelector('.percent_linked');
+      var progress = document.querySelector('.progress_linked');
+      var text = document.querySelector('.text_linked');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+
+
+    }
+
+    //amazon
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'amzcb1state' || key == 'amzcb2state' || key == 'amzcb3state' || key == 'amzcb4state' || key == 'amzcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    amazon_count = c;
+    amazon(c);
+    function amazon(c) {
+      val = c;
+      var percent = document.querySelector('.percent_amazon');
+      var progress = document.querySelector('.progress_amazon');
+      var text = document.querySelector('.text_amazon');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+
+
+    }
+
+    //array
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'arrcb1state' || key == 'arrcb2state' || key == 'arrcb3state' || key == 'arrcb4state' || key == 'arrcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    array_count = c;
+
+    array(c);
+
+     function array(c) {
+      val = c;
+      var percent = document.querySelector('.percent_array');
+      var progress = document.querySelector('.progress_array');
+      var text = document.querySelector('.text_array');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+     
+
+    }
+
+    //binary
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'bincb1state' || key == 'bincb2state' || key == 'bincb3state' || key == 'bincb4state' || key == 'bincb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    binary_count = c;
+    binary(c);
+
+    function binary(c) {
+      val = c;
+      var percent = document.querySelector('.percent_binary');
+      var progress = document.querySelector('.progress_binary');
+      var text = document.querySelector('.text_binary');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+    //dp
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'dycb1state' || key == 'dycb2state' || key == 'dycb3state' || key == 'dycb4state' || key == 'dycb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    dp_count = c;
+    dp(c);
+
+    function dp(c) {
+      val = c;
+      var percent = document.querySelector('.percent_dp');
+      var progress = document.querySelector('.progress_dp');
+      var text = document.querySelector('.text_dp');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+    //google
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'googcb1state' || key == 'googcb2state' || key == 'googcb3state' || key == 'googcb4state' || key == 'googcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    google_count = c;
+    google(c);
+
+     function google(c) {
+      val = c;
+      var percent = document.querySelector('.percent_google');
+      var progress = document.querySelector('.progress_google');
+      var text = document.querySelector('.text_google');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+    //graph
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'grcb1state' || key == 'grcb2state' || key == 'grcb3state' || key == 'grcb4state' || key == 'grcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    graph_count = c;
+    graph(c);
+
+     function graph(c) {
+      val = c;
+      var percent = document.querySelector('.percent_graphs');
+      var progress = document.querySelector('.progress_graphs');
+      var text = document.querySelector('.text_graphs');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+    
+
+    //meta
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'metcb1state' || key == 'metcb2state' || key == 'metcb3state' || key == 'metcb4state' || key == 'metcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    meta_count = c;
+    meta(c);
+
+    function meta(c) {
+      val = c;
+      var percent = document.querySelector('.percent_facebook');
+      var progress = document.querySelector('.progress_facebook');
+      var text = document.querySelector('.text_facebook');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+
+    //netflix
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'netcb1state' || key == 'netcb2state' || key == 'netcb3state' || key == 'netcb4state' || key == 'netcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    netflix_count = c;
+    netflix(c);
+
+    function netflix(c) {
+      val = c;
+      var percent = document.querySelector('.percent_netflix');
+      var progress = document.querySelector('.progress_netflix');
+      var text = document.querySelector('.text_netflix');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+
+    //queue
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'quecb1state' || key == 'quecb2state' || key == 'quecb3state' || key == 'quecb4state' || key == 'quecb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    que_count = c;
+    queue(c);
+
+     function queue(c) {
+      val = c;
+      var percent = document.querySelector('.percent_queue');
+      var progress = document.querySelector('.progress_queue');
+      var text = document.querySelector('.text_queue');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+
+    //recursion
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'reccb1state' || key == 'reccb2state' || key == 'reccb3state' || key == 'reccb4state' || key == 'reccb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    recur_count = c;
+    recursion(c);
+
+    function recursion(c) {
+      val = c;
+      var percent = document.querySelector('.percent_recursion');
+      var progress = document.querySelector('.progress_recursion');
+      var text = document.querySelector('.text_recursion');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+    //sorting
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'sorcb1state' || key == 'sorcb2state' || key == 'sorcb3state' || key == 'sorcb4state' || key == 'sorcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    sort_count = c;
+    sort(c);
+
+     function sort(c) {
+      val = c;
+      var percent = document.querySelector('.percent_sorting');
+      var progress = document.querySelector('.progress_sorting');
+      var text = document.querySelector('.text_sorting');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+
+    //stack
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'stakcb1state' || key == 'stakcb2state' || key == 'stakcb3state' || key == 'stakcb4state' || key == 'stakcb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    stack_count = c;
+    stack(c);
+
+    function stack(c) {
+      val = c;
+
+      var percent = document.querySelector('.percent_stack');
+      var progress = document.querySelector('.progress_stack');
+      var text = document.querySelector('.text_stack');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+
+    }
+    
+
+
+    //tree
+    c = 0;
+    for (let i = 0; i < localStorage.length; i++) {
+      var key = localStorage.key(i);
+      if (key == 'treecb1state' || key == 'treecb2state' || key == 'treecb3state' || key == 'treecb4state' || key == 'treecb5state') {
+        var value = localStorage.getItem(key);
+        if (value == 'true') {
+          c++;
+        }
+      }
+    }
+    tree_count = c;
+    tree(c);
+
+     
+    function tree(c) {
+      val = c;
+      var percent = document.querySelector('.percent_trees');
+      var progress = document.querySelector('.progress_trees');
+      var text = document.querySelector('.text_trees');
+      var count = val;
+
+
+      var loading = setInterval(animate, 10);
+      function animate() {
+
+
+        if (count <= 5) {
+          progress.style.width = count * 80 + 'px';
+          percent.textContent = count * 20 + '%';
+          if (percent.textContent == "100%") {
+            percent.classList.add("text-blink");
+            text.style.display = "block";
+            clearInterval(loading);
+          }
+        }
+
+      }
+
+    }
+ 
+</script>
+
+<script src="searchBar.js"></script>
+</html>

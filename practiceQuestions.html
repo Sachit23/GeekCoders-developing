@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekCoders</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</head>
+<style>
+  body {
+    overflow: hidden;
+  }
+      div form input {
+            padding-left : 5px;
+        }
+        .title-h1 {
+            margin-top : 20px;
+            font-size:30px;
+            margin-bottom:10px;
+        }
+
+        .loginsignup {
+            padding-top : 0;
+            padding-bottom:10px;
+            
+        }
+        div ul li {
+            padding-top : 10px;
+        }
+       div ul p {
+        color : white;
+        margin-top : 10px;
+       }
+</style>
+<body>
+   
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GeekCoders</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <!--Search bar-->
+      <input type="text" id="search-navbar"
+        class="mainLoginInput block w-2/5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="&#61442; Quick Find">
+      
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="../home.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          </li>
+          <li>
+            <a href="../about.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="https://formsubmit.co/el/cageyi"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+          <li>
+
+            <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button">Profile <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdownInformation"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                <div>Admin</div>
+                <div class="font-medium truncate"></div>
+              </div>
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+                <li>
+                  <a href="../overallReport.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">OverallResult</a>
+                </li>
+
+              </ul>
+              <div class="py-2">
+                <a href="../index.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                  out</a>
+              </div>
+            </div>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr class="hr-tag">
+    
+    <center><h1 class="title-h1">Choose any DSA topic</h1></center>
+    <center>
+    <div class="practiceQuestions-container">
+        <div class="practiceQuestions-div1">
+            <a href="arrayPractice/index.html"><img class="array" src="images/array-image.jpg" alt=""></a>
+            <a href="stringPractice/index.html"><img class="string"  src="images/string-image.jpg" alt=""></a>
+            <a href="linkedlistPractice/index.html"><img class="linkedlist"  src="images/linkedlist-image.webp" alt=""></a>
+            <a href="binarysearchPractice/index.html"><img class="binarysearch"  src="images/binarysearch-image.png" alt=""></a>
+            <a href="sortingPractice/index.html"><img class="sorting"  src="images/sorting-image.jpg" alt=""></a>
+            <a href="stackPractice/index.html"><img class="stack"  src="images/stack-image.png" alt=""></a>
+            
+        </div>
+        <div class="practiceQuestions-div2">
+            <a href="queuePractice/index.html"><img class="queue"  src="images/queue-image.jpg" alt=""></a>
+            <a href="treePractice/index.html"><img class="tree"  src="images/tree-image.jpeg" alt=""></a>
+            <a href="graphPractice/index.html"><img class="graph"  src="images/graph-image.png" alt=""></a>
+            <a href="recursionPractice/index.html"><img class="recursion"  src="images/recursion-image.jpg" alt=""></a>
+            <a href="dynamicPractice/index.html"><img class="dynamic"  src="images/dynamic-image.jpg" alt=""></a>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    </center>
+</body>
+<script src="searchBar.js"></script>
+</html>
